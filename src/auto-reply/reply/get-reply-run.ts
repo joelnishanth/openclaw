@@ -494,6 +494,7 @@ export async function runPreparedReply(
       skillsSnapshot,
       provider,
       model,
+      modelExplicitOverride: Boolean(sessionEntry?.providerOverride || sessionEntry?.modelOverride),
       authProfileId,
       authProfileIdSource,
       thinkLevel: resolvedThinkLevel,
